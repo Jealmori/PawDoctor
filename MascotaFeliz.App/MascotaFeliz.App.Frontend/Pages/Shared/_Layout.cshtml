@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <title>Paw Doctor</title>
+    <link rel="icon" href="https://cdn.icon-icons.com/icons2/1949/PNG/512/free-30-instagram-stories-icons53_122600.png">
+    <link rel="stylesheet" href="~/css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="~/lib/fontawesome-free-6.2.0-web/css/all.css">
+     <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="~/Index">Inicio</a>
+            <a href="~/Duenos/ListaDuenos">Dueños</a>
+            <a href="~/Mascotas/ListaMascotas">Mascotas</a>
+            <a href="~/Veterinarios/ListaVeterinarios">Veterinario</a>
+        </nav>
+
+    <section class="textos-header">
+            <h1> Bienvenido a Paw Doctor</h1>
+            <h2>Registro de Clinica Veterinaria</h2>
+        
+     </section>
+        
+    <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-4.96,91.27 C218.51,157.40 349.20,-49.99 513.65,11.34 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>        
+    </header>
+
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+
+    <footer>
+       <div class="contenedor-footer">
+        <div class="contenedor-foo">
+            <h4>Telefono</h4>
+            <p>3125896857</p>
+        </div>
+        <div class="contenedor-foo">
+            <h4>Email</h4>
+            <p>jealmori@gmail.com</p>
+       </div> 
+   </div> 
+        <h2 class="titulo-final">&copy; 2022 Paw Doctor | Jesus Montes  </h2>
+    </footer>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

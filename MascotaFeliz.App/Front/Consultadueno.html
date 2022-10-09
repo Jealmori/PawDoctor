@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paw Doctor</title>
+    <link rel="shortcut icon" href="ImagenesWeb/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./Inicio.html">Inicio</a>
+            <a href="./RegistrarDueno.html">Dueños</a>
+            <a href="./RegistrarMascota.html">Mascotas</a>
+            <a href="./RegistrarVeterinario.html">Veterinario</a>
+        </nav>
+        <section class="tabla">
+            <b>Consulta: 
+                <input id="gfg" type="text" 
+                       placeholder="Buscar...">
+              <table class="content-table">
+            <table class="content-table">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Apellido</th>
+                  <th>Direccion</th>
+                  <th>Telefono</th>
+                  <th>Correo</th>
+                </tr>
+              </thead>
+              <tbody id="geeks">
+                <tr>
+                  <td>Pedro</td>
+                  <td>Perez</td>
+                  <td>Calle 123</td>
+                  <td>321325</td>
+                  <td>ghjh@sdsd</td>
+                </tr>
+                <tr class="active-row">
+                    <td>P565</td>
+                    <td>656z</td>
+                    <td>Cal565le 123</td>
+                    <td>321325</td>
+                    <td>ghjh@sdsd</td>
+                </tr>
+                <tr>
+                    <td>Peto</td>
+                    <td>Pyy</td>
+                    <td>Calle 177</td>
+                    <td>321525</td>
+                    <td>ghjh@sdsd</td>
+                </tr>
+              </tbody>
+            </table>  
+            <script>
+                $(document).ready(function() {
+                    $("#gfg").on("keyup", function() {
+                        var value = $(this).val().toLowerCase();
+                        $("#geeks tr").filter(function() {
+                            $(this).toggle($(this).text()
+                            .toLowerCase().indexOf(value) > -1)
+                        });
+                    });
+                });
+            </script> 
+          </section>
+      </header>
+        <footer>
+            <div class="contenedor-footer">
+             <div class="contenedor-foo">
+                 <h4>Telefono</h4>
+                 <p>3125896857</p>
+             </div>
+             <div class="contenedor-foo">
+                 <h4>Email</h4>
+                 <p>jealmori@gmail.com</p>
+            </div> 
+        </div> 
+             <h2 class="titulo-final">&copy; 2022 Paw Doctor | Jesus Montes  </h2>
+         </footer>        
